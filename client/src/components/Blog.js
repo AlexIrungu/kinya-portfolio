@@ -4,12 +4,12 @@ function Blog(){
     return(
         <div>
             <h1>Blogs</h1>  
-            <div>
+            <div className="article1">
                 <h2> ARTICLE 1</h2>
                 <p>
                
 
-TECH WILL REPLACE PEOPLE WHO DON’T KNOW HOW TO USE IT
+<h1> TECH WILL REPLACE PEOPLE WHO DON’T KNOW HOW TO USE IT </h1>
 
 Young people are living in constant pressure of being on the right career path,and the
 emergence of new technologies everyday,does not help ease the dilemma. In a recent webinar
@@ -29,7 +29,7 @@ the relevant tech careers in the near future.
 
 <ul>
     <li>
-    Data Science and Analytics
+    <h2> Data Science and Analytics </h2>
 
 In Kenya and across Africa, the demand for professionals in data science and analytics is on the
 rise. As businesses and organizations recognize the value of data-driven decision-making,
@@ -38,7 +38,7 @@ predicting market trends to optimizing operational processes, data scientists pl
 in driving innovation and efficiency.
     </li>
     <li>
-    Cybersecurity Specialists
+    <h2> Cybersecurity Specialists </h2>
 
 With the increasing reliance on digital technologies, the need for cybersecurity experts is more
 critical than ever. Kenya, like many other countries, faces cybersecurity challenges, making it
@@ -48,7 +48,7 @@ this a pivotal career in the tech space.
     </li>
     <li>
 
-Mobile App Development
+<h2> Mobile App Development </h2>
 
 The proliferation of smartphones has led to a surge in the demand for mobile applications. In
 Africa, mobile technology has leapfrogged traditional infrastructure, making mobile app
@@ -58,7 +58,7 @@ market.
     </li>
     <li>
 
-Blockchain and Cryptocurrency Experts
+<h2>Blockchain and Cryptocurrency Experts </h2>
 
 Blockchain technology has the potential to revolutionize various industries, from finance to
 supply chain management. As African countries explore the possibilities of blockchain and
@@ -67,7 +67,7 @@ understanding of blockchain can explore opportunities in developing decentralize
 smart contracts, and contributing to the growth of the digital economy.
     </li>
     <li>
-    Pivoting into Tech and Seizing Opportunities
+    <h2> Pivoting into Tech and Seizing Opportunities </h2>
 
 As the tech landscape evolves, individuals seeking to pivot into tech or capitalize on emerging
 opportunities should focus on acquiring relevant skills. Continuous learning is key, and there are
@@ -93,6 +93,18 @@ the continent.
                 </p>
                 
             </div> 
+            <div className="article2">
+
+            </div>
+            <div className="article3">
+
+            </div>
+            <div className="article4">
+
+            </div>
+            <div className="aricle5">
+
+            </div>
             </div>
 )}
 export default Blog;
