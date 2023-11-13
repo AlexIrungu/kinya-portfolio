@@ -5,7 +5,7 @@ import './NavBar.css'
 
 function NavBar() {
     return (
-        <nav>
+        <nav className="custom-nav">
             <div className="bg-black text-white p-4">
                 <ul className="flex space-x-4">
                     <li>

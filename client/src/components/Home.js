@@ -1,4 +1,5 @@
 import React from "react";
+import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin, FaPlay  } from 'react-icons/fa';
 
 function Home() {
   return (
@@ -35,41 +36,54 @@ function Home() {
 
       <footer className="bg-black text-white p-4">
       <div className="container mx-auto flex justify-between items-center">
-        <p>&copy; 2023 Your Broadcast Production Portfolio</p>
         <div className="flex space-x-4">
           <a
-            href="https://twitter.com/yourtwitter"
+            href="https://twitter.com/brenda_kinya_"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-blue-400"
+            className="hover:text-blue-400 flex items-center"
           >
-            Twitter
+            <FaTwitter className="mr-1" />
+            
           </a>
           <a
             href="https://facebook.com/yourfacebook"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-blue-600"
+            className="hover:text-blue-600 flex items-center"
           >
-            Facebook
+            <FaFacebook className="mr-1" />
+            
           </a>
           <a
-            href="https://instagram.com/yourinstagram"
+            href="https://instagram.com/kiny_a"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-pink-500"
+            className="hover:text-pink-500 flex items-center"
           >
-            Instagram
+            <FaInstagram className="mr-1" />
+           
           </a>
           <a
             href="https://linkedin.com/in/yourlinkedin"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-blue-700"
+            className="hover:text-blue-700 flex items-center"
           >
-            LinkedIn
+            <FaLinkedin className="mr-1" />
+            
+          </a>
+          <a
+            href="https://tiktok.com/@brenda_kinya"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-gray-600 flex items-center"
+          >
+            <FaPlay className="mr-1" />
+           
           </a>
         </div>
+        <p>&copy; 2023 Your Broadcast Production Portfolio</p>
       </div>
     </footer>
 

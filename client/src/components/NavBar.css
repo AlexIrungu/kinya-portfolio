@@ -2,6 +2,11 @@
 
 nav {
     /* Add any global styles for the entire navbar here */
+
+  }
+
+  .custom-nav{
+    background: #3498db;
   }
   
   .bg-black {
