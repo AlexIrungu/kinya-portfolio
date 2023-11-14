@@ -7,7 +7,7 @@ function Blog(){
 
              
              <div className="article1 bg-white p-8 rounded-lg shadow-md mb-8">
-             <h2 className="text-2xl font-bold mb-4">ARTICLE 1</h2>
+             {/* <h2 className="text-2xl font-bold mb-4">ARTICLE 1</h2> */}
                 
                
 
@@ -64,7 +64,7 @@ function Blog(){
 
 
             <div className="article2 bg-white p-8 rounded-lg shadow-md mb-8">
-        <h2 className="text-2xl font-bold mb-4">ARTICLE 2</h2>
+        {/* <h2 className="text-2xl font-bold mb-4">ARTICLE 2</h2> */}
         <h1 className="text-3xl font-bold mb-6">
           THE RIPPLE EFFECT: IMPACT OF A DEVALUED CURRENCY ON SMALL BUSINESSES
         </h1>
@@ -143,7 +143,7 @@ headwinds. </p>
 
 
             <div className="article3 bg-white p-8 rounded-lg shadow-md mb-8">
-        <h2 className="text-2xl font-bold mb-4">ARTICLE 3</h2>
+        {/* <h2 className="text-2xl font-bold mb-4">ARTICLE 3</h2> */}
         <h1 className="text-3xl font-bold mb-6">
         OPPORTUNITIES FOR YOUNG PEOPLE IN THE UK POST COVID AND POST BREXIT
         </h1>
@@ -200,7 +200,7 @@ headwinds. </p>
             </div>
 
             <div className="article4 bg-white p-8 rounded-lg shadow-md mb-8">
-        <h2 className="text-2xl font-bold mb-4">ARTICLE 4</h2>
+        {/* <h2 className="text-2xl font-bold mb-4">ARTICLE 4</h2> */}
         <h1 className="text-3xl font-bold mb-6">
         FINTECH REVOLUTION IN KENYA: A FOCUS ON KENYA
         </h1>

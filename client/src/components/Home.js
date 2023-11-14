@@ -6,11 +6,19 @@ import photo from '../pictures/photography.jpg'
 import edit from '../pictures/professionalediting.jpg'
 import social from '../pictures/socialmediamarketing.jpg'
 import video from '../pictures/videography.jpg'
-
+import maathai from '../pictures/wangari.jpg'
 function Home() {
   return (
     <div className="container mx-auto mt-8 font-montserrat">
-     <h1 className="text-4xl font-bold mb-4">"The little grassroots people can change this world" - Wangari Maathai</h1>
+
+<div className="relative mb-4">
+  <img src={maathai} alt="Wangari Maathai" className="w-full h-auto object-cover rounded" />
+  <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-4xl font-bold text-white">
+    "The little grassroots people can change this world" - Wangari Maathai
+  </h1>
+</div>
+
+
 
       
      <p className="text-lg mb-8 font-semibold text-gray-700">
@@ -19,47 +27,38 @@ function Home() {
 
       
 <div className="grid grid-cols-2 gap-8">
-      <div className="bg-white p-4 rounded shadow">
-
-
-        <div className="flex items-center mb-4">
-          <FaVideo className="text-4xl text-indigo-600 mr-2" />
-          <h2 className="text-xl font-semibold">Creative Video Production</h2>
-          <img
-        src={video}
-        alt="Video Production"
-        className="w-32 h-32 object-cover rounded"
-      />
-        </div>
-       
-       
-      </div>
-
-      <div className="bg-white p-4 rounded shadow">
-        <div className="flex items-center mb-4">
-          <FaCamera className="text-4xl text-indigo-600 mr-2" />
-          <h2 className="text-xl font-semibold">Social Media Marketing</h2>
-          <img src={social} alt="" className="w-32 h-32 object-cover rounded"/>
-        </div>
-       
-      </div>
-
-      <div className="bg-white p-4 rounded shadow">
-        <div className="flex items-center mb-4">
-          <FaEdit className="text-4xl text-indigo-600 mr-2" />
-          <h2 className="text-xl font-semibold">Broadcast Quality Editing</h2>
-          <img src={edit} alt="" className="w-32 h-32 object-cover rounded"/>
-        </div>
-       
-      </div>
-      <div className="bg-white p-4 rounded shadow">
-      <div className="flex items-center mb-4">
-          <FaCamera className="text-4xl text-indigo-600 mr-2" />
-          <h2 className="text-xl font-semibold">Professional Photography</h2>
-          <img src={photo} alt="" className="w-32 h-32 object-cover rounded"/>
-        </div>
-        </div>
+  <div className="bg-white p-4 rounded shadow transition duration-300 transform hover:scale-105">
+    <div className="flex items-center mb-4">
+      <FaVideo className="text-4xl text-indigo-600 mr-2" />
+      <h2 className="text-xl font-semibold">Creative Video Production</h2>
+      <img src={video} alt="Video Production" className="w-32 h-32 object-cover rounded" />
     </div>
+  </div>
+
+  <div className="bg-white p-4 rounded shadow transition duration-300 transform hover:scale-105">
+    <div className="flex items-center mb-4">
+      <FaCamera className="text-4xl text-indigo-600 mr-2" />
+      <h2 className="text-xl font-semibold">Social Media Marketing</h2>
+      <img src={social} alt="" className="w-32 h-32 object-cover rounded" />
+    </div>
+  </div>
+
+  <div className="bg-white p-4 rounded shadow transition duration-300 transform hover:scale-105">
+    <div className="flex items-center mb-4">
+      <FaEdit className="text-4xl text-indigo-600 mr-2" />
+      <h2 className="text-xl font-semibold">Broadcast Quality Editing</h2>
+      <img src={edit} alt="" className="w-32 h-32 object-cover rounded" />
+    </div>
+  </div>
+
+  <div className="bg-white p-4 rounded shadow transition duration-300 transform hover:scale-105">
+    <div className="flex items-center mb-4">
+      <FaCamera className="text-4xl text-indigo-600 mr-2" />
+      <h2 className="text-xl font-semibold">Professional Photography</h2>
+      <img src={photo} alt="" className="w-32 h-32 object-cover rounded" />
+    </div>
+  </div>
+</div>
 
       
       
@@ -130,7 +129,7 @@ function Home() {
            
           </a>
         </div>
-        <p>&copy; 2023 Your Broadcast Production Portfolio</p>
+        <p>&copy; 2023 </p>
       </div>
     </footer>
 
