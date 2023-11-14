@@ -1,37 +1,84 @@
 import React from "react";
-import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin, FaPlay  } from 'react-icons/fa';
+import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin, FaTiktok  } from 'react-icons/fa';
+import { FaCamera, FaPen } from "react-icons/fa";
+import { FaVideo,  FaEdit } from "react-icons/fa";
+import photo from '../pictures/photography.jpg'
+import edit from '../pictures/professionalediting.jpg'
+import social from '../pictures/socialmediamarketing.jpg'
+import video from '../pictures/videography.jpg'
 
 function Home() {
   return (
-    <div className="container mx-auto mt-8">
-      <h1 className="text-4xl font-bold mb-4">Welcome to Our Broadcast Production Portfolio</h1>
-      <p className="text-lg mb-8">
-        Elevate your brand with top-notch broadcast production services. We specialize in creating
-        compelling content that captivates audiences.
-      </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div className="bg-white p-4 rounded shadow">
-          <h2 className="text-xl font-semibold mb-2">Creative Video Production</h2>
-          <p>
-            Our team of skilled professionals is dedicated to bringing your ideas to life through
-            creative and impactful video production.
-          </p>
+    <div className="container mx-auto mt-8 font-montserrat">
+     <h1 className="text-4xl font-bold mb-4">"The little grassroots people can change this world" - Wangari Maathai</h1>
+
+      
+     <p className="text-lg mb-8 font-semibold text-gray-700">
+  Explore My Portfolio
+</p>
+
+      
+<div className="grid grid-cols-2 gap-8">
+      <div className="bg-white p-4 rounded shadow">
+
+
+        <div className="flex items-center mb-4">
+          <FaVideo className="text-4xl text-indigo-600 mr-2" />
+          <h2 className="text-xl font-semibold">Creative Video Production</h2>
+          <img
+        src={video}
+        alt="Video Production"
+        className="w-32 h-32 object-cover rounded"
+      />
         </div>
-        <div className="bg-white p-4 rounded shadow">
-          <h2 className="text-xl font-semibold mb-2">Live Event Coverage</h2>
-          <p>
-            Capture the excitement of your live events with our comprehensive live event coverage
-            services. We ensure every moment is captured with precision and style.
-          </p>
-        </div>
-        <div className="bg-white p-4 rounded shadow">
-          <h2 className="text-xl font-semibold mb-2">Broadcast Quality Editing</h2>
-          <p>
-            Our editing team is equipped with the latest technology to deliver broadcast-quality
-            editing services, ensuring your content stands out.
-          </p>
-        </div>
+       
+       
       </div>
+
+      <div className="bg-white p-4 rounded shadow">
+        <div className="flex items-center mb-4">
+          <FaCamera className="text-4xl text-indigo-600 mr-2" />
+          <h2 className="text-xl font-semibold">Social Media Marketing</h2>
+          <img src={social} alt="" className="w-32 h-32 object-cover rounded"/>
+        </div>
+       
+      </div>
+
+      <div className="bg-white p-4 rounded shadow">
+        <div className="flex items-center mb-4">
+          <FaEdit className="text-4xl text-indigo-600 mr-2" />
+          <h2 className="text-xl font-semibold">Broadcast Quality Editing</h2>
+          <img src={edit} alt="" className="w-32 h-32 object-cover rounded"/>
+        </div>
+       
+      </div>
+      <div className="bg-white p-4 rounded shadow">
+      <div className="flex items-center mb-4">
+          <FaCamera className="text-4xl text-indigo-600 mr-2" />
+          <h2 className="text-xl font-semibold">Professional Photography</h2>
+          <img src={photo} alt="" className="w-32 h-32 object-cover rounded"/>
+        </div>
+        </div>
+    </div>
+
+      
+      
+     
+       
+     
+      
+
+      {/* <div className="bg-white p-4 rounded shadow">
+        <div className="flex items-center mb-4">
+          <FaPen className="text-4xl text-indigo-600 mr-2" />
+          <h2 className="text-xl font-semibold">Writing Articles</h2>
+        </div>
+        <p className="text-gray-700">
+          Transform ideas into compelling narratives. Our article writing services are crafted to engage, inform, and leave a lasting impact on your audience.
+        </p>
+        
+      </div> */}
+      
 
 
       <footer className="bg-black text-white p-4">
@@ -46,7 +93,7 @@ function Home() {
             <FaTwitter className="mr-1" />
             
           </a>
-          <a
+          {/* <a
             href="https://facebook.com/yourfacebook"
             target="_blank"
             rel="noopener noreferrer"
@@ -54,7 +101,7 @@ function Home() {
           >
             <FaFacebook className="mr-1" />
             
-          </a>
+          </a> */}
           <a
             href="https://instagram.com/kiny_a"
             target="_blank"
@@ -65,7 +112,7 @@ function Home() {
            
           </a>
           <a
-            href="https://linkedin.com/in/yourlinkedin"
+            href="https://linkedin.com/in/brenda-kinya-14b668175/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-blue-700 flex items-center"
@@ -79,7 +126,7 @@ function Home() {
             rel="noopener noreferrer"
             className="hover:text-gray-600 flex items-center"
           >
-            <FaPlay className="mr-1" />
+            <FaTiktok className="mr-1" />
            
           </a>
         </div>
