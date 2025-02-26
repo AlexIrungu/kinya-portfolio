@@ -25,29 +25,28 @@ function Home() {
         Explore My Portfolio
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {[
-          { title: "Creative Video Production", icon: FaVideo, img: video },
-          { title: "Social Media Marketing", icon: FaCamera, img: social },
-          { title: "Broadcast Quality Editing", icon: FaEdit, img: edit },
-          { title: "Professional Photography", icon: FaCamera, img: photo },
+          { title: "Creative Video Production", icon: FaVideo, img: video, link: "/video-production" },
+          { title: "Social Media Marketing", icon: FaCamera, img: social, link: "/social-media" },
+          { title: "Broadcast Quality Editing", icon: FaEdit, img: edit, link: "/editing" },
+          { title: "Professional Photography", icon: FaCamera, img: photo, link: "/photography" },
         ].map((service, index) => (
-          <div
+          <a
             key={index}
-            className="bg-white p-6 rounded-lg shadow-md flex items-center gap-4 transition-transform transform hover:scale-105 hover:shadow-xl"
+            href={service.link}
+            className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center transition-transform transform hover:scale-105 hover:shadow-xl"
           >
-            <service.icon className="text-5xl text-indigo-600" />
-            <div>
-              <h2 className="text-xl font-semibold text-gray-900">
-                {service.title}
-              </h2>
-              <img
-                src={service.img}
-                alt={service.title}
-                className="mt-2 w-28 h-28 object-cover rounded-lg"
-              />
-            </div>
-          </div>
+            <service.icon className="text-5xl text-indigo-600 mb-4" />
+            <h2 className="text-xl font-semibold text-gray-900 mb-2">
+              {service.title}
+            </h2>
+            <img
+              src={service.img}
+              alt={service.title}
+              className="w-32 h-32 object-cover rounded-lg"
+            />
+          </a>
         ))}
       </div>
 
@@ -71,7 +70,7 @@ function Home() {
               </a>
             ))}
           </div>
-          <p className="text-gray-400">&copy; 2024 Brenda Kinya</p>
+          <p className="text-gray-400 text-sm">&copy; 2024 Brenda Kinya | All Rights Reserved</p>
         </div>
       </footer>
     </div>
